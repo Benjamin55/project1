@@ -60,9 +60,18 @@ nav {
     align-items: center;
     min-height: 80vh;
 }
-
+.presentation-one {
+    display: flex;
+    width: 80%;
+    margin:auto;
+    align-items: center;
+    min-height: 80vh;
+    flex-direction: row-reverse;
+    
+}
 .introduction {
     flex: 1;
+    
 }
 
 .intro-text h1 {
@@ -71,12 +80,14 @@ nav {
     background: linear-gradient(to right, #494964, #6f6f89);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+ 
 }
 
 .intro-text p {
     margin-top:5px;
     font-size: 22px;
     color: #585772;
+  
 }
 
 .cta {
@@ -93,6 +104,10 @@ nav {
     font-size: 16px;
 }
 
+.cta-add a {
+   text-decoration: none;
+   color: white;
+}
 .cta-add {
     background: #c36cbb;
     width: 150px;
@@ -103,7 +118,6 @@ nav {
     color: white;
     margin-left: 30px;
 }
-
 .cover {
     flex: 1;
 }
@@ -131,6 +145,58 @@ nav {
     z-index: -1;
   
 }
+
+.black-circle {
+    position: absolute;
+    height: 500px;
+    width:500px;
+    opacity: 0.1;
+    filter: drop-shadow(0px 10px 10px black);
+    top: 400px;
+    left: 100px;
+}
+
+.black-circle-one {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    opacity: 0.1;
+    filter: drop-shadow(0px 10px 10px black);
+    top: 900px;
+    right: 40px;
+}
+
+.black-circle-two {
+    position: absolute;
+    height: 600px;
+    width: 600px;
+    opacity: 0.05;
+    filter: drop-shadow(0px 10px 10px black);
+    top: 1200px;
+    right: 600px;
+}
+
+.blog {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+   flex-direction: column;
+}
+
+.blog-one {
+    margin-top: 50px;
+
+}
+.blog-one h1,p {
+    display: flex;
+    margin: 50px;
+    justify-content: center;
+    color: grey;
+}
+
+
+
 
 @keyframes drop {
     0% {
