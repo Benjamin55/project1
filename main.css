@@ -20,13 +20,14 @@ header {
     align-items: center;
 }
 
-.logo-container, .nav-links, .cart {
+.logo-container, .nav-links, .logo-right {
     display:flex;
 }
 
 .logo {
-    font-weight: 400;
+    font-weight: 700;
     margin:5px;
+    color: #c36cbb;
 }
 
 .logo-container {
@@ -47,8 +48,10 @@ nav {
     font-size: 18px;
     text-decoration: none;
 }
-
-.cart {
+.nav-link:hover {
+    opacity: 0.7;
+  }
+.logo-right {
     flex:1;
     justify-content: flex-end;
 }
@@ -87,8 +90,9 @@ nav {
     margin-top:5px;
     font-size: 22px;
     color: #585772;
-  
+     margin-left: 0;
 }
+
 
 .cta {
     padding: 50px 0 0 0;
@@ -107,6 +111,10 @@ nav {
 .cta-add a {
    text-decoration: none;
    color: white;
+}
+.cta-select a {
+    text-decoration: none;
+    color: #c36cbb;
 }
 .cta-add {
     background: #c36cbb;
@@ -195,7 +203,50 @@ nav {
     color: grey;
 }
 
+#map {
+    height: 500px;
+    width: 80%;
+    margin: auto;
+    background: black;
+    margin: 100px;
 
+}
+
+.location-text {
+    display:flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    color: grey;
+}
+
+
+.footer-links  {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        color:grey;
+       font-size: 30px;
+}
+
+.fa {
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    color: grey;
+  }
+  .fa-youtube {
+      color: grey;
+  }
+  .fa-instagram {
+      color:grey;
+  }
 
 
 @keyframes drop {
@@ -210,18 +261,21 @@ nav {
 }
 
 @media screen and (max-width: 1024px) {
-    .presentation {
+    .presentation, .presentation-one {
         flex-direction: column;
     }
-    .introduction {
+    .introduction,  {
         margin-top: 5vh;
         text-align: center;
     }
     .logo {
         display: none;
     }
-    .cart {
+    .logo-right {
         display: none;
+    }
+    .logo-container{
+        display:none;
     }
     .intro-text h1 {
         font-size: 5vh;
@@ -238,6 +292,7 @@ nav {
     .small-circle, .big-circle {
         opacity: 0.4;
     }
+    #map, .location-text {
+     display: none;
     }
-
-}
+    }
